@@ -1,0 +1,23 @@
+body{
+    background-color: #fbf4e8;
+    color: #173d35;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    color: #173d35;
+    font-size: 48px;
+}
+
+a{
+    color: #167563;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    max-width: 500px;
+}
