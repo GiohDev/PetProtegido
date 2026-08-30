@@ -102,3 +102,79 @@ figcaption {
 nav a:hover{
     color:  #eb7256;
 }
+
+
+.faixa-dados{
+    max-width: none;
+    margin: 0;
+    padding: 32px 24px;
+    background-color: #173d35;
+    color: #ffffff;
+    border: none;
+    border-radius:0;
+}
+
+.faixa-conteudo{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.dado{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.dado strong{
+    color: #f5c84b;
+    font-size: 28px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.dado span{
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+@media(max-width: 768px){
+    .hero {
+        flex-direction: column;
+        gap: 24px; 
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    nav{
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    section{
+        padding: 28px;
+    }
+
+    .faixa-conteudo{
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .dado{
+        justify-content: flex-start;
+    }
+
+
+}
+
+.botao-principal:focus-visible,
+nav a:focus-visible {
+    outline: 3px solid #eb7256;
+    outline-offset: 4px;
+}
