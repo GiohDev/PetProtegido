@@ -209,7 +209,76 @@ nav a:hover{
     
 }
 
+.secao-calendario {
+    display:grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 64px;
+    padding: 64px;
+    background-color: #167563;
+    color: #ffffff;
+    border:none;
+    border-radius: 28px;
+}
 
+.secao-calendario h2 {
+    color: #ffffff;
+    font-size: 42px;
+}
+
+.secao-calendario h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.etiqueta {
+    color: #f5c84b; 
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.lista-etapas {
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+
+.lista-etapas li {
+    display:grid;
+    grid-template-columns: 48px 1fr;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.lista-etapas li:last-child {
+    border-bottom: none;
+}
+
+.numero-etapa {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #f5c84b;
+    color:#173d35;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.lista-etapas strong {
+    font-size: 18px;
+}
+
+.lista-etapas p {
+    margin: 4px 0 0;
+    color: #dceee5;
+    font-size: 14px;
+}
 
 @media(max-width: 768px){
     .hero {
@@ -243,6 +312,16 @@ nav a:hover{
     
     .grade-beneficios {
         grid-template-columns: 1fr;
+    }
+
+    .secao-calendario {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 32px 24px;
+    }
+
+    .secao-calendario h2 {
+        font-size: 34px;
     }
 
 }
