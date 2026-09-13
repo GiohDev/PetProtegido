@@ -280,6 +280,54 @@ nav a:hover{
     font-size: 14px;
 }
 
+.chamada-final{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 48px;
+    background-color: #eb7256;
+    color:#ffffff;
+    border: none;
+    border-radius: 28px;
+}
+
+.chamada-final-texto {
+    max-width: 700px;
+}
+
+.chamada-final h2 {
+    margin-top: 8px;
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.chamada-final-texto > p:last-child {
+    margin-bottom: 0;
+}
+
+.botao-claro{
+    display:inline-block;
+    flex-shrink: 0;
+    padding: 14px 24px;
+    background-color: #fffaf2;
+    color: #173d35;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+
+.botao-claro:hover{
+    background-color: #f5c84b;
+    transform: translateY(-2px);
+}
+
+.botao-claro:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+}
+
 @media(max-width: 768px){
     .hero {
         flex-direction: column;
@@ -322,6 +370,16 @@ nav a:hover{
 
     .secao-calendario h2 {
         font-size: 34px;
+    }
+
+    .chamada-final{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px 24px;
+    }
+
+    .chamada-final h2{
+        font-size: 30px;
     }
 
 }
