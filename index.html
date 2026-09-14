@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="style1.css">
+    <script src="script.js" defer></script>
     <title>Pet Protegido</title>
 </head>
 
 <body>
 
-   <header>
+   <header id="topo">
         
        
-      <nav>
+
+      <button
+         class="botao-menu"
+         type="button"
+         aria-expanded="false"
+         aria-controls="menu-principal"              
+      >
+         Menu
+      </button>
+
+      <nav id="menu-principal">
          <a href="#por-que-vacinar">Por que vacinar?</a>
          <a href="#quando-vacinar">Quando vacinar?</a>
          <a href="#passos-vacinacao">Passos da vacinação</a>
@@ -219,12 +230,21 @@
 
    </main>
 
-   <footer>
+   <footer class="rodape">
+      <div class="rodape-conteudo">
+         <a class="marca-rodape" href="#topo">
+            Pet Protegido
+         </a>
 
          <p>
-            Pet Protegido — informação e cuidado para toda a família.
+            &copy; <span id="ano-atual"></span>
+            Pet Protegido - informação e cuidado para toda a familia.
          </p>
-         
+
+         <a class="voltar-topo" href="#topo">
+            Voltar ao inicio ↑
+         </a>
+      </div>
    </footer>
 
 </body>
