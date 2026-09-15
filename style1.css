@@ -394,6 +394,73 @@ nav a:hover{
     outline-offset: 4px;
 }
 
+.secao-mordida {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 48px;
+    padding: 48px;
+    border: 2px solid #eb7256;
+    border-radius: 28px;
+    background-color: #fffaf2;
+}
+
+.secao-mordida .etiqueta {
+    color: #c94f39;
+}
+
+.mordida-introducao h2 {
+    font-size: 38px;
+}
+
+.lista-cuidados {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-cuidados li {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+    padding: 18px;
+    background-color: #ffffff;
+    border: 1px solid #e2d8c8;
+    border-radius: 16px;
+}
+
+.lista-cuidados li:last-child {
+    margin-bottom: 0;
+}
+
+.lista-cuidados p {
+    margin: 4px 0 0;
+    font-size: 14px;
+}
+
+.numero-cuidado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #eb7256;
+    color: #ffffff;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.aviso-mordida {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 16px 20px;
+    background-color: #fff0d4;
+    border-left: 5px solid #f5c84b;
+    border-radius: 12px;
+}
+
+
 
 @media(max-width: 768px){
     .hero {
@@ -464,13 +531,24 @@ nav a:hover{
         text-align: center;
     }
 
+    .secao-mordida {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 32px 24px;
+    }
 
+    .mordida-introducao h2 {
+        font-size: 32px;
+    }
 
-    
-
-    
 
 }
+
+@media(prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+} 
 
 .botao-principal:focus-visible,
 nav a:focus-visible {

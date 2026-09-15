@@ -12,4 +12,15 @@ botaoMenu.addEventListener("click",function () {
    botaoMenu.setAttribute("aria-expanded", menuAberto);
    botaoMenu.textContent = menuAberto ? "Fechar menu" : "Menu";
 
-});
+})
+
+const linksMenu = menuPrincipal.querySelectorAll("a");
+
+linksMenu.forEach(function (link) {
+   link.addEventListener("click", function () {
+      menuPrincipal.classList.remove("menu-aberto");
+      botaoMenu.setAttribute("aria-expanded", false);
+      botaoMenu.textContent = "Menu";
+
+   })
+})
